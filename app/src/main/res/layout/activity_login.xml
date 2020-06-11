@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/gradient_yellow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/maven_pro_regular"
+            android:text="Garbage Collection"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:padding="10dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_dashboard_black_24dp"
+            android:tint="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/lin"
+            />
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:elevation="15dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/whitebadge"
+            android:orientation="vertical"
+            app:elevation="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/maven_pro_medium"
+                android:text="Phone"
+                android:textColor="#969696"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="27dp"
+                android:background="@drawable/rect_grayoutline1"
+                android:orientation="horizontal"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+91"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="#00000000"
+                    android:textColor="#000"
+
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:id="@+id/phoneET"
+                    android:textColorHint="#000"
+                    android:textSize="15.4sp" />
+            </LinearLayout>
+
+
+            <Button
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="19.3dp"
+                android:background="@drawable/rect_yellow1"
+                android:fontFamily="@font/maven_pro_bold"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="SIGN IN"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/signinBT"
+
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linsig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/maven_pro_regular"
+            android:text="New? "
+            android:id="@+id/ne"
+            android:textColor="#4a4a4a"
+            android:textSize="15.4sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/maven_pro_bold"
+            android:text="Sign-up "
+            android:id="@+id/si"
+            android:textColor="#4a4a4a"
+            android:textSize="15.4sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/maven_pro_regular"
+            android:text="for a new account."
+            android:id="@+id/cre"
+            android:textColor="#4a4a4a"
+            android:textSize="15.4sp" />
+    </LinearLayout>
+
+</RelativeLayout>

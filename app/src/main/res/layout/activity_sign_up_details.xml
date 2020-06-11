@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+    android:orientation="vertical"
+    android:background="@drawable/whitebadge"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_width="match_parent"
+    android:text="WELCOME"
+    android:textSize="25sp"
+    android:gravity="center"
+    android:textColor="#000"
+    android:layout_marginTop="40dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/profice_picture"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:paddingRight="7dp"
+        android:layout_marginBottom="10dp"
+        android:tint="@color/colorPrimary"
+        android:layout_marginStart="20dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/ic_account_circle_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Name *"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="27dp"
+        android:background="@drawable/rect_grayoutline1"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:textColor="#000"
+            android:ems="10"
+            android:id="@+id/nameET"
+            android:inputType="textPersonName"
+            android:textColorHint="#000"
+            android:textSize="15.4sp" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Phone *"
+       />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="27dp"
+        android:background="@drawable/rect_grayoutline1"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:textColor="#000"
+            android:ems="10"
+            android:inputType="phone"
+
+            android:id="@+id/phoneET"
+            android:textColorHint="#000"
+            android:textSize="15.4sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Email"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="27dp"
+        android:background="@drawable/rect_grayoutline1"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#00000000"
+            android:textColor="#000"
+            android:id="@+id/mailET"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#000"
+            android:textSize="15.4sp" />
+    </LinearLayout>
+
+
+    <Button
+            android:id="@+id/signupBT"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_yellow1"
+            android:text="Register"
+            android:layout_marginBottom="5dp"
+            android:textColor="#FFF"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteY="556dp" />
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linlog"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/maven_pro_regular"
+            android:text="Existing? "
+            android:id="@+id/ne"
+            android:textColor="#4a4a4a"
+            android:textSize="15.4sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/maven_pro_bold"
+            android:text="Login "
+            android:id="@+id/si"
+            android:textColor="#4a4a4a"
+            android:textSize="15.4sp" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

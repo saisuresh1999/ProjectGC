@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_discover">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.android.projectgc.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_discover"
+            app:destination="@id/navigation_discover" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_discover"
+        android:name="com.android.projectgc.ui.discover.DiscoverFragment"
+        android:label="@string/title_discover"
+        tools:layout="@layout/discover_fragment" >
+        <action
+            android:id="@+id/action_navigation_discover_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_discover_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.android.projectgc.ui.profile.ProfileFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/profile_fragment" />
+</navigation>

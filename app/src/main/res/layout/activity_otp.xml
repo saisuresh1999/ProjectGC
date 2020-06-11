@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textColor="#ffd11a"
+            android:gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="50dp"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/reenterphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:hint="your mobile number"
+            android:ems="10"
+            android:inputType="phone"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OTP"
+            android:gravity="center"
+            android:textColor="#ffd11a"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="50dp"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/enterotp"
+            android:gravity="center"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:text="Authenticating your device... Otp has been sent to the above mobile number "
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/sendotp"
+
+            android:text="Verify OTP"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rect_yellow1"
+            />
+
+
+        <TextView
+            android:id="@+id/resendotp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:text="Not Recieved OTP yet?Click here to resend OTP"
+            android:textAlignment="center"
+            android:textColor="#ffd11a"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
